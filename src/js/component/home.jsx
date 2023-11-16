@@ -7,6 +7,7 @@ import React, { useState } from "react";
 const Home = () => {
 	const [selectedColor, setSelectedColor] = useState("red")
 	return (
+		<div className="container">
 		<div className="traffic-light">
 			<div
 				onClick={() => setSelectedColor("red")}
@@ -22,6 +23,7 @@ const Home = () => {
 				onClick={() => setSelectedColor("green")}
 				className={"light green" + (selectedColor === "green" ? "green glow" : "")}
 			></div>
+		</div>
 		</div>
 	);
 };
